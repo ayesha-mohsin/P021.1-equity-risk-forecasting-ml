@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments — THIS IS WHAT CAUSED YOUR ISSUE
+venv/
+env/
+.env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Data files (large — don't push)
+data/raw/
+*.csv
+*.parquet
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+
+# MLflow artifacts (keep mlflow.db but not large model binaries)
+mlruns/*/artifacts/
+mlruns/*/metrics/
+mlruns/*/params/
+mlruns/*/tags/
+mlruns/*/meta.yaml
+
+# Reports (generated images)
+reports/*.png
+reports/*.jpg
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Secrets
+.env
+*.key
+secrets.py
